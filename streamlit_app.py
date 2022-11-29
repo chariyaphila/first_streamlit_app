@@ -1,3 +1,3 @@
 import streamlit
 
-steamlit.title('Hands on lab version 2')
+streamlit.title('Hands on lab version 2')
