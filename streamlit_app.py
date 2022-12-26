@@ -37,8 +37,8 @@ try:
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
     streamlit.dataframe(fruityvice_normalized)
 
-  Except URLError as e:
-    streamlit.stop()
+Except URLError as e:
+  streamlit.stop()
 
 #import snowflake.connector
 
