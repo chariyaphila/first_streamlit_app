@@ -36,7 +36,7 @@ def get_fruityvice_data(this_fruit_choice):
 #New Section to display fruityvice api response
 streamlit.header("Fruityvice Fruit Advice!")
 try:
-  fruit_choice = streamlit.text_input('View Uur Fruit List - Add Your Favorites')
+  fruit_choice = streamlit.text_input('What fruit would you like information about?')
   if not fruit_choice:
     streamlit.error("Please select a fruit to get information.")
   else:
@@ -53,7 +53,7 @@ except URLError as e:
 #my_cur.execute("SELECT * from fruit_load_list")
 #my_data_rows = my_cur.fetchall()
 
-streamlit.header("The fruit load list contains :")
+streamlit.header("View Our Fruit List - Add Your Favorites")
 #Snowflake-related functions
 def get_fruit_load_list():
   with my_cnx.cursor() as my_cur:
